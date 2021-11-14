@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+  <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="../#home">BRAND</a>
+        </div>
+        <div class="links">
+          <a href="apie.html">Apie</a>
+          <a href="galerija.html">Galerija</a>
+          <div class="dropdown drop">
+            <button class="dropbtn">Nustatymai
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <button type="button" onclick="mySetFunction()">Pakeisti šriftą</button>
+              <button type="button" onclick="myResetFunction()">Gražinti šriftą</button>
+              <!-- <button id="btn" onclick="myFormFunction()">Naktinis režimas on/off</button> -->
+            </div>
+          </div>
+          <a href="kontaktai.html">Kontaktai</a>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="apie.html">Apie</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontaktai.html">Kontaktai</a>
+        <div class="dropdown drop overlay-drop">
+          <button class="dropbtn">Nustatymai
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="overlay-container">
+          <div class="dropdown-content content-overlay">
+            <button type="button" onclick="mySetFunction()">Pakeisti šriftą</button>
+            <button type="button" onclick="myResetFunction()">Gražinti šriftą</button>
+            <!-- <button id="btn1" onclick="myFormFunction()">Naktinis režimas</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="all-gallery">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+      <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+      <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+      <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+      <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+      <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+      <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Lorem ipsum</div>
+  </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+  </body>
+  <script src="../script.js"></script>
+</html>

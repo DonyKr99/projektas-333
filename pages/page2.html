@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="page2.css">
+  <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="../#home">BRAND</a>
+        </div>
+        <div class="links">
+          <a href="apie.html">Apie</a>
+          <a href="galerija.html">Galerija</a>
+          <div class="dropdown drop">
+            <button class="dropbtn">Nustatymai
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <button type="button" onclick="mySetFunction()">Pakeisti šriftą</button>
+              <button type="button" onclick="myResetFunction()">Gražinti šriftą</button>
+              <!-- <button id="btn" onclick="myFormFunction()">Naktinis režimas on/off</button> -->
+            </div>
+          </div>
+          <a href="kontaktai.html">Kontaktai</a>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="apie.html">Apie</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontaktai.html">Kontaktai</a>
+        <div class="dropdown drop overlay-drop">
+          <button class="dropbtn">Nustatymai
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="overlay-container">
+          <div class="dropdown-content content-overlay">
+            <button type="button" onclick="mySetFunction()">Pakeisti šriftą</button>
+            <button type="button" onclick="myResetFunction()">Gražinti šriftą</button>
+            <!-- <button id="btn1" onclick="myFormFunction()">Naktinis režimas</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="obj-container">
+    <div class="obj-1 obj">
+      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+      <article>
+        <h2>Lorem</h2>
+        <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+      </article>
+    </div>
+    <div class="obj-2 obj obj2">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+      <article>
+        <h2>Lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+      </article>
+    </div>
+    <div class="obj-3 obj obj3">
+      <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80" alt="">
+      <article>
+        <h2>Lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+      </article>
+    </div>
+  </div>
+
+
+  </body>
+  <script src="../script.js"></script>
+</html>
